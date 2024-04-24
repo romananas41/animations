@@ -1,5 +1,5 @@
 body{
-  background-color: whitesmoke; 
+  background-color: rgb(178, 227, 239); 
 }
 p{
  font-size: 50px;  
@@ -15,7 +15,9 @@ p{
   height: 100px;
   background-color: blue;
   animation: move 2s infinite alternate;
-  margin: 30px;
+  position: absolute;
+  top: 420px;
+  left: 360px;
 }
 @keyframes colorChange {
   0% { background-color: red; }
@@ -26,7 +28,9 @@ p{
   width: 100px;
   height: 100px;
   animation: colorChange 3s infinite;
-  margin: 30px;
+  position: absolute;
+  top: 290px;
+  left: 700px;
 }
 @keyframes sizeChange {
   0% { transform: scale(1); }
@@ -74,7 +78,9 @@ p{
   height: 100px;
   border: 1px solid black;
   animation: borderChange 2s infinite;
-  margin: 30px;
+  position: absolute;
+  top: 290px; 
+  left: 1000px;
 }
 @keyframes spread {
   0% { clip-path: circle(0%); }
@@ -85,7 +91,9 @@ p{
   height: 100px;
   background-color: cyan;
   animation: spread 3s infinite;
-  margin: 30px;
+  position: absolute;
+  top: 540px;
+  left: 531px;
 }
 @keyframes translate {
   0% { transform: translate(0, 0); }
@@ -580,6 +588,18 @@ p{
   93.6% { transform: rotate(180deg) scale(1) translateX(0); }
   100% { transform: rotate(210deg) scale(1) translateX(0); }
 }
+.fixmarquee {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(91, 163, 179, 0.8); 
+  padding: 10px; 
+  font-family: Verdana, sans-serif;
+  color: darkgreen;
+  font-size: 40px;
+}
 
+ 
 
  
